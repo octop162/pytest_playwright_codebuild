@@ -7,7 +7,7 @@ phases:
     commands:
       - pip3 install pytest pytest-playwright playwright
       - playwright install 
-  builds:
+  build:
     commands:
       - pytest --junitxml=reports/report.xml
     
