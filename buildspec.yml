@@ -21,4 +21,4 @@ reports:
 artifacts:
   files:
     - "screenshots/*"
-  base-directory: $(date +%Y-%m-%d)
+  name: $(date +%Y-%m-%d)
