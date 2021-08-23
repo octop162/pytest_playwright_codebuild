@@ -21,4 +21,4 @@ reports:
 artifacts:
   files:
     - "screenshots/*"
-  name: $(date +%Y-%m-%d)
+  s3-prefix: $(date +%Y-%m-%d) 
