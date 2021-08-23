@@ -7,6 +7,6 @@ def test_wikipedia_title(page: Page):
     assert "Wikipedia" in page.title()
 
 def test_google_title(page: Page):
-    page.goto("https://google.com")
+    page.goto("https://www.google.com")
     page.screenshot(path="screenshots/google.png")
-    assert "Wikipedia" in page.title()
+    assert "Google" in page.title()
