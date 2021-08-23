@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.8
+    commands:
+      - pip3 install pytest pytest-playwright playwright
+      - playwright install 
+  builds:
+    commands:
+      - pytest --junitxml=reports/report.xml
+    
+reports:
+    pytest_reports:
+      files:
+          - report.xml
+    base-directory: reports
+    file-format: JUNITXML
