@@ -17,3 +17,7 @@ reports:
       - "report.xml"
     base-directory: "reports"
     file-format: JUNITXML
+
+artifacts:
+  files:
+    - "screenshots/*"
